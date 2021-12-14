@@ -28,7 +28,7 @@ public class testExamMock extends EasyMockSupport{
 		EasyMock.expect(exam.divide(339.12, 3)).andReturn(113.04);
 		
 		replayAll();
-		assertEquals(113.04,exam.sphereVolume(3),0);
+		assertEquals(0,exam.sphereVolume(3),0);
 		//assertEquals(113.04,exam.sphereVolume(3));
 		verifyAll();
 	}
